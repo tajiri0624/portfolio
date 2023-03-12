@@ -1,0 +1,51 @@
+@use 'sass:math';
+
+// インナー幅設定(pxのまま)
+$inner: 1080px;
+
+// 余白
+$padding-pc: 143px;
+$padding-sp: 15px;
+
+// font-family
+$base-font-family: 'Noto Serif JP', serif;
+
+// font-weight
+$regular: 400;
+$medium: 500;
+
+body {
+  font-family: $base-font-family;
+  font-weight: $regular;
+}
+
+// 色指定
+$black: #202925;
+$gord: #91855F;
+$gray: #E3E3E3;
+body {
+  color: $black;
+}
+
+//ブレイクポイント
+$breakpoints: (
+  sm: 600,
+  md: 768,
+  lg: 1024,
+  xl: 1440,
+);
+
+// メディアクエリ
+$mediaquerys: (
+  sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
+  md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
+  lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+  xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+);
+
+// メディアクエリを "@include mq(){}" で書くことができる
+@mixin mq($mediaquery: md) {
+  @media #{map-get($mediaquerys, $mediaquery)} {
+    @content;
+  }
+}

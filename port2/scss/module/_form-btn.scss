@@ -1,0 +1,12 @@
+@use "../global" as *;
+
+
+
+.from-btn {
+  @include mq(md) {
+    font-size: rem(24);
+    line-height: calc(32/24);
+    max-width: rem(179);
+    padding: rem(14) 0;
+  }
+}

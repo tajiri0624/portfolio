@@ -1,0 +1,39 @@
+@use "../global" as *;
+
+.kon {
+  margin-top: rem(46);
+  @include mq(md) {
+    margin-top: rem(103);
+  }
+}
+
+.kon__inner {
+  overflow: hidden;
+  @include mq(md) {
+    overflow: initial;
+  }
+}
+
+.kon__item {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(52);
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.kon__text {
+  margin-top: rem(27);
+  @include mq(md) {
+    margin-top: rem(22);
+  }
+}
+
+.kom__btn-wrapper {
+  margin-top: rem(23);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}

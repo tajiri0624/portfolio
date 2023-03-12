@@ -1,0 +1,19 @@
+@use "../global" as *;
+
+.contact__form-title h2 {
+  font-size: rem(48);
+  line-height: calc(64/48);
+  padding-left: rem(15);
+  font-weight: $medium;
+  @include mq(md) {
+    font-size: rem(100);
+    line-height: calc(133/100);
+    padding-left: rem(143);
+    letter-spacing: rem(-5);
+    margin-top: rem(40);
+  }
+}
+
+.contact__form-title h2 span {
+  color: $gord;
+}

@@ -1,0 +1,15 @@
+@use "../global" as *;
+
+
+.mv__img {
+  width: 100%;
+} 
+.mv__img img {
+  aspect-ratio: 375/620;
+  width: 100%;
+  object-fit: cover;
+  @include mq(md) {
+    width: 100%;
+    aspect-ratio: 1366/700;
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>実案件2 お問い合わせーページ</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+  <!-- menuスライダー -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/6-1-8.css">
+  <!-- newsアコーディオン -->
+  <link rel="stylesheet" type="text/css" href="css/9-2-2.css">
+  <!-- css -->
+  <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+  <header class="sub-header">
+    <div class="header__inner inner">
+      <div class="sub__header-nav-wrapper">
+        <div class="sub-header__rogo">
+          <a href=""><img src="./img/logo_white.svg" alt="ロゴです"></a>
+        </div>
+        <nav class="sub__header-nav sub-header__nav sub-js__drawer">
+          <ul class="sub__header-nav-items sub-header-nav-items">
+            <li class="sub-header-nav-item"><a href="./index.html">TOP</a></li>
+            <li class="sub-header-nav-item"><a href="./menu.html">メニュー</a></li>
+            <li class="sub-header-nav-item"><a href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sub__header-hamburger sub-hamburger sub-js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="contact-mv">
+      <div class="contact__mv-inner">
+        <div class="contact__mv-wrapper">
+          <h2 class="contact-mv__title">
+            お問い合わせ
+          </h2>
+        </div>
+      </div>
+      <div class="sub-mv-slider-wrapper contact-mv-slider-wrapper">
+        <ul class="sub__mv-items menu-mv__items sub-mv__slider">
+          <li class="sub-mv__item"><img src="./img/slider-1.jpg" alt=""></li>
+          <li class="sub-mv__item"><img src="./img/slider-2.jpg" alt=""></li>
+          <li class="sub-mv__item"><img src="./img/slider-3.jpg" alt=""></li>
+          <li class="sub-mv__item"><img src="./img/slider-4.jpg" alt=""></li>
+          <li class="sub-mv__item"><img src="./img/slider-5.jpg" alt=""></li>
+          <li class="sub-mv__item"><img src="./img/slider-6.jpg" alt=""></li>
+          <li class="sub-mv__item"><img src="./img/slider-7.jpg" alt=""></li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact-form">
+      <div class="contact__form-title">
+        <h2><span>C</span>ontact</h2>
+      </div>
+      <div class="form__inner inner">
+        <form action="contact" class="contact__form form">
+          <div class="form__item">
+            <div class="form__label-area">
+              <label for="name" class="form__label">お名前<span>※</span></label>
+            </div>
+            <div class="form__input-area">
+              <input type="text" class="form-text" name="name" id="name">
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="form__label-area">
+              <label for="tel" class="form__label">お電話番号<span>※</span></label>
+            </div>
+            <div class="form__input-area">
+              <input type="text" class="form-text" name="tel" id="tel">
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="form__label-area">
+              <label for="email" class="form__label">メールアドレス</label>
+            </div>
+            <div class="form__input-area">
+              <input type="email" class="form-text" name="email" id="email">
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="form__label-area">
+              <label class="form__radio" id="radio">お問い合わせ項目<span>※</span></label>
+            </div>
+            <div class="form__input-area form__input-radio">
+              <div class="form__radio-box">
+                <input type="radio" class="form-radio" name="radio" id="reserve" checked><label for="reserve">予約</label>
+              </div>
+              <div class="form__radio-box">
+                <input type="radio" class="form-radio" name="radio" id="others"><label for="others">その他</label>
+              </div>
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="form__label-area">
+              <label for="message" class="form__label">お問い合わせ内容<span>※</span></label>
+            </div>
+            <div class="form__input-area">
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="contact__text">
+        <p>※前日のご予約の方はお電話でお願いします。<br>
+          ※ご予約希望の方は日にちと人数のご記入をお願いします。
+        </p>
+      </div>
+      <div class="form__btn">
+        <button class="form-btn btn" type="submit">送信</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer contact__footer">
+    <div class="footer__rogo footer__rogo-inner">
+      <a href=""><img src="./img/logo_white.svg" alt="お店のロゴです。"></a>
+    </div>
+    <div class="footer__inner">
+      <div class="footer-wrapper">
+        <div class="footer__body">
+          <p class="footer-item">店名<span class="footer-category footer__name">Kon</span></p>
+          <p class="footer-item">住所<span class="footer-category footer__addres">熊本県熊本市城下町1-1</span></p>
+          <p class="footer-item">電話番号<span class="footer-category footer__tel">096-111-1111</span></p>
+          <p class="footer-item">アクセス<span class="footer-category footer__acces">熊本駅より市電で城下町へ城下町<br>降車後徒歩3分</span></p>
+          <p class="footer-item">営業時間<span class="footer-category footer__time">18:00〜23:00</span></p>
+          <p class="footer-item">定休日<span class="footer-category footer__day">火曜日</span></p>
+        </div>
+        <div class="footer__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13413.820467613032!2d130.692587680517!3d32.80670413920447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f40e023aca59%3A0x5e8b66c876cde430!2z54aK5pys5Z-O!5e0!3m2!1sja!2sjp!4v1669256174062!5m2!1sja!2sjp" width="345" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!--自作のJS-->
+  <script src="js/6-1-8.js"></script>
+</body>
+</html>

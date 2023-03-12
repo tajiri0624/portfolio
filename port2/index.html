@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>実案件2 トップページ</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+  <!-- css -->
+  <link rel="stylesheet" href="./scss/style.css">
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+  <!-- menuスライダー -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/6-1-8.css">
+  <!-- newsアコーディオン -->
+  <link rel="stylesheet" type="text/css" href="css/9-2-2.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner inner">
+      <div class="header__nav-wrapper">
+        <div class="header-rogo">
+          <a href=""><img src="./img/logo_black.svg" alt="ロゴです"></a>
+        </div>
+        <nav class="header__nav header-nav js-drawer">
+          <ul class="header__nav-items header-nav-items">
+            <li class="header-nav-item"><a href="">TOP</a></li>
+            <li class="header-nav-item"><a href="./menu.html">メニュー</a></li>
+            <li class="header-nav-item"><a href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__hamburger hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="mv">
+      <div class="mv__img">
+        <img src="./img/top-mv.jpg" alt="グラスが並んでいる写真です。">
+      </div>
+    </div>
+    <section class="obsession">
+      <div class="obsession__inner inner">
+        <div class="obsession-top__wrapper section-top__wrapper">
+          <div class="section-border">
+            <h2 class="obsession__top section-title">こだわり</h2>
+          </div>
+        </div>
+        <div class="obsession__item obsession-item">
+          <div class="obsession__img">
+            <picture>
+              <source srcset="./img/img_sara.png" media="(min-width:768px)">
+              <img src="./img/slider-6.jpg" alt="魚料理の写真です">
+            </picture>
+          </div>
+          <div class="obsession__body">
+            <h3 class="obsession-title">この土地で育った野菜と、<br>
+              この土地に暮らす人々と。
+            </h3>
+            <p class="obsession-text">
+              Konでは地元でとれた食材を使用しています。食材そのものの旨味を引き出し、一品一品に生産者さんの想いや、つくり手であるオーナーシェフの情熱を注いで皆様に提供させていただいております。<br>
+              創業以来12年、皆様に愛され続けてきた味をお楽しみください。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="kon">
+      <div class="kon__inner inner">
+        <div class="kon-top__wrapper section-top__wrapper">
+          <div class="section-border">
+            <h2 class="kon__top section-title">Konの一皿</h2>
+          </div>
+        </div>
+        <div class="kon__item kon-item">
+          <div class="kon__img">
+            <img src="./img/top-meuniere.jpg" alt="魚料理の写真です">
+          </div>
+          <div class="kon__body">
+            <div class="kon-title__box">
+              <div class="kon__title kon-title">
+                <h3>白ワインと</h3>
+                <h3>絶品ムニエルで</h3>
+                <h3>至福の時を</h3>
+              </div>
+            </div>
+            <div class="kon__text kon-text">
+              <p>フランス料理の代表作である魚のムニエル。<br>
+                その時々で旬の魚を使ってカリッと焼き上げたお魚と、ソ
+                ムリエによって選び抜かれた究極の1杯で至福の時をお
+                過ごしください。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="kom__btn-wrapper">
+      <a href="" class="kon__btn btn">MORE</a>
+      </div>
+    </section>
+    <section class="recommend">
+      <div class="recommend__inner inner">
+        <div class="recommend-top__wrapper section-top__wrapper">
+          <div class="section-border">
+            <h2 class="recommend__top section-title">おすすめ</h2>
+          </div>
+        </div>
+        <div class="recommend__item recommend-item">
+          <div class="recommend__img">
+            <img src="./img/top-recommend.jpg" alt="テーブルに料理が並んでいる写真です。">
+          </div>
+          <div class="recommend__body recommend-body">
+            <div class="recommend-title">
+              <h3>
+                旬の食材を使った<br>
+                Konのフレンチフルコース
+              </h3>
+            </div>
+            <p class="recommend-text">
+              その時々で最高の食材を選び、料理を行います。<br>
+              小前菜から前菜、ポタージュ、魚料理に肉料理、最後のデザートまで、こだわり抜いた当店だけのフルコースです。<br>
+              時期によってメニューが異なりますので、お問い合わせください。<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="owner">
+      <div class="owner__inner inner">
+        <div class="owner-top__wrapper section-top__wrapper">
+          <div class="section-border">
+            <h2 class="owner__top section-title">オーナー</h2>
+          </div>
+        </div>
+        <div class="owner__item owner-item">
+          <div class="owner__img">
+            <img src="./img/top-owner.jpg" alt="オーナーの写真です。">
+          </div>
+          <div class="owner__body">
+            <h3 class="owner-title">
+              Owner<br>
+              Chef
+            </h3>
+            <div class="owner-text__box">
+              <p class="owner-text">
+                フランスの三つ星レストラン“ラ・ムール”で2年間修行を積む。<br>
+                帰国後、地元である熊本県にてフレンチレストラン“Kon”をオープンする。<br>
+                創業より12年、こだわりを持った料理を提供し続ける。<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="menu__inner inner">
+        <div class="menu-top__wrapper section-top__wrapper">
+          <div class="section-border">
+            <h2 class="menur__top section-title">お品書き</h2>
+          </div>
+        </div>
+        <div class="menu__img">
+          <ul class="menu__items menu-items menu-slider">
+            <li><img src="./img/top-menu1.jpg" alt=""></li>
+            <li><img src="./img/top-menu2.jpg" alt=""></li>
+            <li><img src="./img/top-menu3.jpg" alt=""></li>
+            <li><img src="./img/top-menu4.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-btn-wrapper">
+        <a href="" class="menu__btn btn">MORE</a>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__inner inner">
+        <div class="news-top__wrapper section-top__wrapper">
+          <div class="section-border">
+            <h2 class="news__top section-title">お知らせ</h2>
+          </div>
+        </div>
+        <ul class="mews__items news-items news-accordion">
+          <li class="news-item">
+            <div class="news-title__box">
+              <time datetime="2022-05-11">2022/05/11</time>
+              <h3>フランスより新作のワインが入荷し…</h3>
+            </div>
+            <div class="news-text__box">
+              <p>お待たせしました！<br>
+                フランス南部のプロヴァンス地方より、新作のワイン入荷いたしました。美しい黄金色の色味とエレガントな力強さを持つ白ワインです。当店の料理ととてもよくマッチします。<br>
+                数に限りがございます。<br>
+              </p>
+            </div>
+          </li>
+          <li class="news-item">
+            <div class="news-title__box">
+              <time datetime="2022-03-29">2022/03/29</time>
+              <h3>12周年パーティーを行います！</h3>
+            </div>
+            <div class="news-text__box">
+              <p>Konは4月5日にオープンから12周年を迎えます。これもひとえに皆様方の多大なるご支援の賜物と心より感謝申し上げます。つきましては、感謝の気持ちをお伝えしたく12周年パーティーを行います。<br>
+                ただ今、ご予約承り中です。皆様にお会いできることを楽しみにしております。<br>
+              </p>
+            </div>
+          </li>
+          <li class="news-item">
+            <div class="news-title__box">
+              <time datetime="2022-02-10">2022/02/10</time>
+              <h3>バレンタインデーのご予約はお早めに。</h3>
+            </div>
+            <div class="news-text__box">
+              <p>2月14日はバレンターンデー特別メニューをご用意させていただきます。<br>
+                詳細はインスタグラムをご覧ください。席に限りがございますのでお早にご予約の方よろしくお願いいたします。<br>
+              </p>
+            </div>
+          </li>
+          <li class="news-item">
+            <div class="news-title__box">
+              <time datetime="2022-01-01">2022/01/01</time>
+              <h3>明けましておめでとうございます。</h3>
+            </div>
+            <div class="news-text__box">
+              <p>2022年明けましておめでとうございます！<br>
+                昨年も大変お世話になりました。皆様のお陰で素晴らしい年にすることができました。また、本年もよろしくお願いいたします。<br>
+                皆様の笑顔にお会いできることを楽しみにしています。<br>
+              </p>
+            </div>
+          </li>
+          <li class="news-item">
+            <div class="news-title__box">
+              <time datetime="2021-12-31">2021/12/31</time>
+              <h3>今年も1年ありがとうございました。</h3>
+            </div>
+            <div class="news-text__box">
+              <p>本年も1年、大変お世話になりました。<br>
+                皆様の大切な1日に当店を選んでいただきありがとうございました。来年もまたよろしくお願いいたします。<br>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__rogo footer__rogo-inner">
+      <a href=""><img src="./img/logo_white.svg" alt="お店のロゴです。"></a>
+    </div>
+    <div class="footer__inner">
+      <div class="footer-wrapper">
+        <div class="footer__body">
+          <p class="footer-item">店名<span class="footer-category footer__name">Kon</span></p>
+          <p class="footer-item">住所<span class="footer-category footer__addres">熊本県熊本市城下町1-1</span></p>
+          <p class="footer-item">電話番号<span class="footer-category footer__tel">096-111-1111</span></p>
+          <p class="footer-item">アクセス<span class="footer-category footer__acces">熊本駅より市電で城下町へ城下町<br>降車後徒歩3分</span></p>
+          <p class="footer-item">営業時間<span class="footer-category footer__time">18:00〜23:00</span></p>
+          <p class="footer-item">定休日<span class="footer-category footer__day">火曜日</span></p>
+        </div>
+        <div class="footer__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13413.820467613032!2d130.692587680517!3d32.80670413920447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f40e023aca59%3A0x5e8b66c876cde430!2z54aK5pys5Z-O!5e0!3m2!1sja!2sjp!4v1669256174062!5m2!1sja!2sjp" width="345" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!--自作のJS-->
+  <script src="js/6-1-8.js"></script>
+</body>
+</html>

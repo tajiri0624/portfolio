@@ -1,0 +1,36 @@
+@use "../global" as *;
+
+
+.menu__inner {
+  margin-top: rem(45);
+  padding-left: 0;
+  padding-right: 0;
+  @include mq(md) {
+    margin-top: rem(104);
+    padding-left: rem(143);
+    padding-right: rem(143);
+  }
+}
+
+.menu-top__wrapper {
+  padding-left: rem(15);
+  @include mq(md) {
+    padding-left: 0;
+    
+  }
+}
+
+.menu__img {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(50);
+  }
+}
+
+.menu-btn-wrapper {
+  text-align: center;
+  margin-top: rem(22);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}

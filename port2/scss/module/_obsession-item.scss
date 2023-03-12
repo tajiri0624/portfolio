@@ -1,0 +1,70 @@
+@use "../global" as *;
+
+.obsession__img {
+  width: rem(240);
+  height: rem(160);
+  margin: 0 auto;
+  @include mq(md) {
+    width: rem(340);
+    height: rem(340);
+    margin: 0;
+  }
+}
+
+.obsession__img img {
+  aspect-ratio: 240/160;
+  width: 100%;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 340/340;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.obsession__body {
+  background-color: $black;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  @include mq(md) {
+    margin-left: rem(51);
+    margin-right: 0;
+    width: rem(690);
+    height: rem(340);
+  }
+}
+
+.obsession-title {
+  font-size: rem(24);
+  line-height: calc(32/24);
+  color: $gray;
+  padding-top: rem(22);
+  padding-left: rem(15);
+  font-weight: $regular;
+  @include mq(md) {
+    padding-top: rem(42);
+    padding-left: 0;
+    text-align: center;
+    font-weight: $regular;
+  }
+}
+
+.obsession-text {
+  font-size: rem(16);
+  line-height: calc(21/16);
+  color: $gray;
+  margin-top: rem(24);
+  padding-left: rem(15);
+  padding-right: rem(15);
+  padding-bottom: rem(55);
+  letter-spacing: rem(-2);
+  font-weight: $regular;
+  @include mq(md) {
+    line-height: calc(36/16);
+    margin-top: rem(38);
+    padding-left: rem(75);
+    padding-right: rem(75);
+    padding-bottom: rem(61);
+    letter-spacing: rem(-2.1);
+  }
+}

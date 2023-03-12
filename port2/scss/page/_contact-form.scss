@@ -1,0 +1,82 @@
+@use "../global" as *;
+
+
+.form__inner {
+  padding-left: rem(35);
+  padding-right: rem(35);
+  margin-top: rem(19);
+  @include mq(md) {
+    padding-right: rem(338);
+    padding-left: rem(338);
+    margin-top: rem(44);
+  }
+}
+
+.contact__form {
+  margin-top: rem(23);
+  margin: 0 auto;
+  width: rem(305);
+  @include mq(md) {
+    width: rem(690);
+    margin-top: 0;
+  }
+}
+
+.form__item {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form__item:nth-child(4) {
+  @include mq(md) {
+    justify-content: flex-start;
+  }
+}
+
+.form__item:last-child {
+  @include mq(md) {
+    align-items: flex-start;
+  }
+}
+
+.form__item:nth-child(n+2) {
+  margin-top: rem(38);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.contact__text {
+  text-align: right;
+  margin-top: rem(14);
+  @include mq(md) {
+    margin-top: rem(41);
+  }
+}
+
+.contact__text p {
+  font-size: rem(12);
+  line-height: calc(16/12);
+  font-weight: $regular;
+  color: $black;
+  display: inline-block;
+  text-align: left;
+  padding-right: rem(22);
+  letter-spacing: rem(-1);
+  @include mq(md) {
+    font-size: rem(14);
+    line-height: calc(19/14);
+    padding-right: rem(170);
+  }
+}
+
+.form__btn {
+  text-align: center;
+  margin-top: rem(56);
+  @include mq(md) {
+    margin-top: rem(76);
+  }
+}

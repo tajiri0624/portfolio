@@ -1,0 +1,88 @@
+@use "../global" as *;
+
+
+label {
+  font-size: rem(16);
+  line-height: calc(21/16);
+  color: #707070;
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(24);
+    line-height: calc(32/24);
+  }
+}
+
+label span {
+  font-size: rem(16);
+  line-height: calc(21/16);
+  color: $gord;
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(24);
+    line-height: calc(32/24);
+  }
+}
+
+.form__input-area {
+  text-align: right;
+  @include mq(md) {
+    text-align: initial;
+  }
+}
+
+.form-text {
+  width: rem(294);
+  height: rem(35);
+  border: rem(1) solid $gord;
+  border-top-right-radius: rem(10);
+  @include mq(md) {
+    width: rem(420);
+    height: rem(50);
+  }
+}
+
+.form__input-radio {
+  display: flex;
+  text-align: left;
+  padding-left: rem(13);
+  @include mq(md) {
+    padding-left: 0;
+  }
+}
+
+.form__radio-box {
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: 0;
+    margin-left: rem(84);
+  }
+
+}
+
+.form__radio-box:nth-child(n+2) {
+  margin-left: rem(84);
+  @include mq(md) {
+    margin-left: rem(69);
+  }
+}
+
+.form-radio {
+  margin-right: rem(22);
+  color: $gord;
+  @include mq(md) {
+    margin-right: rem(22);
+  }
+}
+
+textarea {
+  width: rem(294);
+  height: rem(250);
+  border: rem(1) solid $gord;
+  border-top-right-radius: rem(10);
+  margin-top: rem(9);
+  @include mq(md) {
+    width: rem(420);
+    height: rem(300);
+    margin-top: 0;
+  }
+}

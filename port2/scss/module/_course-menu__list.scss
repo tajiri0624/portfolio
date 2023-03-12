@@ -1,0 +1,38 @@
+@use "../global" as *;
+
+
+.course-menu__block {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.course-menu__item {
+  @include mq(md) {
+    gap: rem(40);
+  }
+}
+
+.course-menu__item:nth-child(n+2) {
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.course-menu__text {
+  @include mq(md) {
+    text-align: right;
+    margin-top: rem(52);
+  }
+}
+
+.course-menu__text p {
+  @include mq(md) {
+    font-size: rem(14);
+    line-height: calc(19/14);
+    font-weight: $medium;
+    letter-spacing: rem(-2);
+    margin-right: rem(67);
+  }
+}

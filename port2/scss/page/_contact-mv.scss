@@ -1,0 +1,42 @@
+@use "../global" as *;
+
+.contact__mv-inner {
+    background-image: url(../img/sp_contact_mv.jpg);
+    width: 100%;
+    height: rem(620);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include mq(md) {
+      background-image: url(../img/contact-mv.png);
+      height: rem(700);
+    }
+}
+
+.contact__mv-wrapper {
+  background-color: $black;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.contact-mv__title {
+  font-size: rem(32);
+  line-height: calc(43/32);
+  font-weight: $regular;
+  color: #E2E2E2;
+  text-align: right;
+  padding-top: rem(133);
+  padding-right: rem(35);
+  letter-spacing: rem(-3);
+  @include mq(md) {
+    font-size: rem(40);
+    line-height: calc(53/40);
+    text-align: left;
+    padding-top: rem(352);
+    padding-left: rem(173);
+  }
+}
+
+.contact-mv-slider-wrapper {
+  margin-top: 0;
+}

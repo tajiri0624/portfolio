@@ -1,0 +1,23 @@
+@use "../global" as *;
+
+
+.drink-menu__list {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.drink-menu__block {
+  @include mq(md) {
+    width: calc(33.333333% - 100px / 3);
+  }
+}
+
+
+
+.drink-menu__block:nth-child(n+2) {
+  @include mq(md) {
+    margin-left: rem(100);
+  }
+}

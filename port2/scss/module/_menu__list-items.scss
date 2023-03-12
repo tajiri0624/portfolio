@@ -1,0 +1,71 @@
+@use "../global" as *;
+
+.menu__list-wrapper:nth-child(n+2) {
+  margin-top: rem(23);
+  @include mq(md) {
+    margin-top: rem(88);
+  }
+}
+
+.menu__list-inner {
+  padding-left: rem(66);
+  padding-right: rem(68);
+  margin-top: rem(23);
+  @include mq(md) {
+    padding-left: rem(273);
+    padding-right: rem(145);
+    margin-top: rem(45);
+  }
+}
+
+
+
+.menu__list-block:nth-child(n+2) {
+  margin-top: rem(23);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+.menu__list-items {
+  max-width: rem(241);
+  margin: auto;
+  @include mq(md) {
+    max-width: rem(1366);
+    margin: auto;
+  }
+}
+
+.menu-list__item {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.menu-list__item:nth-child(n+2) {
+  margin-top: rem(21);
+  @include mq(md) {
+    margin-top: rem(42);
+  }
+}
+
+.menu-list__mame {
+  font-size: rem(14);
+  line-height: calc(19/14);
+  color: #2C3832;
+  font-weight: $medium;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(21/16);
+  }
+}
+
+.menu-list__price {
+  font-size: rem(14);
+  line-height: calc(19/14);
+  color: #2C3832;
+  font-weight: $medium;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(21/16);
+  }
+}

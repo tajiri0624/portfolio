@@ -1,0 +1,17 @@
+@use "../global" as *;
+
+.news__inner {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(108);
+    padding-left: rem(283);
+    padding-right: rem(283);
+  }
+}
+
+.mews__items {
+  margin-top: rem(23);
+  @include mq(md) {
+    margin-top: rem(37);
+  }
+}

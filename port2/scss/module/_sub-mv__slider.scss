@@ -1,0 +1,24 @@
+@use "../global" as *;
+
+.sub-mv-slider-wrapper {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.sub-mv__item {
+  width: rem(180);
+  @include mq(md) {
+    width: rem(330);
+  }
+}
+
+.sub-mv__item img {
+  aspect-ratio: 180/131;
+  width: 100%;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 330/240;
+  }
+}

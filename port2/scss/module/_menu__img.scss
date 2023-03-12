@@ -1,0 +1,26 @@
+@use "../global" as *;
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu-items li:nth-child(n+5){
+  @include mq(md) {
+    margin-top: rem(20);
+  }
+}
+
+
+.menu-items img{
+  width: rem(160);
+  height: rem(110);
+  @include mq(md) {
+    aspect-ratio: 240/240;
+    width: rem(240);
+    height: rem(240);
+  }
+}
+
+

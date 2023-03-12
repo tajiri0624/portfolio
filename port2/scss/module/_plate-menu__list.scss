@@ -1,0 +1,23 @@
+@use "../global" as *;
+
+
+.plate-menu__list {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.plate-menu__block {
+  @include mq(md) {
+    width: calc(33.333333% - 100px / 3);
+  }
+}
+
+
+
+.plate-menu__block:nth-child(n+2) {
+  @include mq(md) {
+    margin-left: rem(100);
+  }
+}

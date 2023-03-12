@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+
+.obsession {
+  background-image: url(../img/bg-1.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(md) {
+    padding-bottom: rem(99);
+  }
+}
+
+.obsession__inner {
+  padding-top: rem(41);
+  overflow: hidden;
+  @include mq(md) {
+    overflow: initial;
+    padding-top: rem(83);
+  }
+}
+
+.obsession__item {
+  margin-top: rem(20);
+  @include mq(md) {
+    display: flex;
+    margin-top: rem(51);
+  }
+}
+

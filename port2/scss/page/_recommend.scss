@@ -1,0 +1,28 @@
+@use "../global" as *;
+
+.recommend {
+  background-image: url(../img/bg-2.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    margin-top: rem(102);
+    padding-bottom: rem(100);
+  }
+}
+
+.recommend__inner {
+  padding-top: rem(40);
+  @include mq(md) {
+    padding-top: rem(108);
+  }
+}
+
+.recommend__item {
+  margin-top: rem(25);
+  @include mq(md) {
+    margin-top: rem(47);
+  }
+}

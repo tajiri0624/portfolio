@@ -1,0 +1,35 @@
+@use "../global" as *;
+
+.owner {
+  background-image: url(../img/bg-1.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(md) {
+    padding-bottom: rem(129);
+  }
+}
+
+.owner__inner {
+  padding-top: rem(47);
+  overflow: hidden;
+  @include mq(md) {
+    padding-top: rem(105);
+    overflow: initial;
+  }
+}
+
+.owner__item {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(48);
+    gap: rem(20);
+  }
+}
+
+.owner__body {
+  margin-top: rem(13);
+  @include mq(md) {
+    margin-top: rem(76);
+  }
+}

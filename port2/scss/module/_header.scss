@@ -1,0 +1,89 @@
+@use "../global" as *;
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: rem(14);
+  @include mq(md) {
+    display: block;
+    justify-content: initial;
+    padding-top: rem(40);
+    
+  }
+}
+
+.header__nav-wrapper {
+  @include mq(md) {
+    display: flex;
+    padding-right: rem(14);
+  }
+}
+
+.header-rogo {
+  width: rem(105);
+  height: rem(50);
+  position: relative;
+  z-index: 10;
+  @include mq(md) {
+    width: rem(230);
+    height: rem(110);
+    position: static;
+  }
+}
+
+.header-rogo img {
+  aspect-ratio: 105/50;
+  width: 100%;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 230/110;
+  }
+}
+
+
+.header__nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  @include mq(md) {
+    display: initial;
+    position: static;
+    margin-left: rem(400);
+  }
+}
+
+.header__nav-items {
+  padding-left: rem(188);
+  padding-top: rem(436);
+  padding-bottom: rem(10);
+  @include mq(md) {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: rem(58);
+  }
+}
+
+
+
+.header__hamburger {
+  margin-right: rem(9);
+  position: relative;
+  z-index: 10;
+  @include mq(md) {
+    display: none;
+  }
+}
