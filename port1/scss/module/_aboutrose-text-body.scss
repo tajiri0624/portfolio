@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+
+.aboutrose-text-body {
+  text-align: left;
+  @include mq(md) {
+    text-align: center;
+  }
+}
+
+
+
+.aboutrose-text-body p {
+  font-size: rem(14);
+  line-height: calc(21/14);
+  font-weight: $medium;
+  color: #534E52;
+  letter-spacing: rem(-2);
+  @include mq(md) {
+    font-size: rem(24);
+    line-height: calc(32/24);  
+  }
+}
+
+.aboutrose-text-body p:nth-child(n+2) {
+  margin-top: rem(13);
+  @include mq(md) {
+    margin-top: rem(33);
+  }
+}

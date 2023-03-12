@@ -1,0 +1,76 @@
+@use "../global" as *;
+
+header {
+  background-color: $back;
+  height: rem(70);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  @include mq(md) {
+    height: rem(100);
+  }
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+}
+
+.header__nav-wrapper {
+  height: inherit;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  height: inherit;
+}
+
+.header__logo a {
+  display: block;
+  height: inherit;
+}
+
+.header__logo img {
+  width:rem(178);
+  padding-top: rem(10);
+  @include mq(md) {
+    width: rem(259.3);
+    height: rem(80);
+    margin-top: rem(7);
+    padding-top: rem(0);
+  }
+}
+
+.header__nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  @include mq(md) {
+    display: block;
+    position: initial;
+    margin-left: rem(325.7);
+  }
+}
+
+.header__btn {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.header__hamburger {
+  position: relative;
+  z-index: 20;
+  @include mq(md) {
+    display: none;
+  }
+}

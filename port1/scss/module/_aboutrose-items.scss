@@ -1,0 +1,97 @@
+@use "../global" as *;
+
+
+.aboutrose-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.aboutrose-item {
+  width: calc(50% - 55px/2);
+  @include mq(md) {
+    width: calc(33.333% - 190px/3);
+  }
+}
+
+.aboutrose-item:nth-child(2n) {
+  margin-left: rem(55);
+  @include mq(md) {
+    margin-left: 0;
+  }
+}
+
+
+.aboutrose-item:nth-child(3n) {
+  margin-left: 0;
+}
+.aboutrose-item:nth-child(n+2) {
+  @include mq(md) {
+    margin-left: rem(70);
+  }
+}
+
+
+.aboutrose-item:nth-child(n+3) {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: 0;
+    margin-left: rem(30);
+  }
+}
+
+.aboutrose-item:nth-child(n+4) {
+  @include mq(md) {
+    margin-top: rem(96);
+    margin-left: 0;
+  }
+}
+
+.aboutrose-item-img {
+  @include mq(md) {
+    width: rem(300);
+    margin: auto;
+  }
+}
+.aboutrose-item-img img {
+  aspect-ratio: 150/150;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  @include mq(md) {
+    aspect-ratio: 300/300;
+  }
+}
+
+.aboutrose-item-body {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(12);
+  }
+}
+
+.aboutrose-category {
+  font-size: rem(24);
+  font-weight: $demi-bold;
+  line-height: calc(32/24);
+  color: $sub;
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(36);
+    line-height: calc(48/36);
+  }
+}
+
+.aboutrose-text {
+  font-size: rem(14);
+  line-height: calc(19/14);
+  font-weight: $demi-bold;
+  margin-top: rem(25);
+  letter-spacing: rem(-2);
+  @include mq(md) {
+    font-size: rem(14);
+    line-height: calc(21/16);
+    margin-top: rem(29);
+    letter-spacing: rem(1);
+  }
+}

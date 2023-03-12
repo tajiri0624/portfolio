@@ -1,0 +1,57 @@
+@use 'sass:math';
+
+// インナー幅設定(pxのまま)
+$inner: 1280px;
+
+// 余白
+$padding-pc: 80px;
+$padding-sp: 10px;
+
+// font-family
+$base-font-family: 'yu-mincho-pr6n', sans-serif;
+$title-font-family: 'Cinzel Decorative', 'cursive';
+$rogo-font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+
+// font-weight
+$regular: 400;
+$medium: 500;
+$demi-bold: 600;
+$bold: 700;
+
+body {
+  font-family: $base-font-family;
+  font-weight: $regular;
+}
+
+// 色指定
+$main: #DF8686;
+$sub: #A17856;
+$text: #534E52;
+$back: #F6F1E8;
+$white: #FFFFFF;
+body {
+  color: $text;
+}
+
+//ブレイクポイント
+$breakpoints: (
+  sm: 600,
+  md: 768,
+  lg: 1024,
+  xl: 1440,
+);
+
+// メディアクエリ
+$mediaquerys: (
+  sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
+  md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
+  lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+  xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+);
+
+// メディアクエリを "@include mq(){}" で書くことができる
+@mixin mq($mediaquery: md) {
+  @media #{map-get($mediaquerys, $mediaquery)} {
+    @content;
+  }
+}

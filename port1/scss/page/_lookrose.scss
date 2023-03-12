@@ -1,0 +1,19 @@
+@use "../global" as *;
+
+.lookrose {
+  margin-top: rem(115);
+  @include mq(md) {
+    margin-top: rem(160);
+  }
+}
+
+.lookrose__inner {
+  margin-top: rem(20);
+  margin-left: rem(37.5);
+  margin-right: rem(37.5);
+  @include mq(md) {
+    margin-top: rem(75);
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

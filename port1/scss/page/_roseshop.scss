@@ -1,0 +1,27 @@
+@use "../global" as *;
+
+.roseshop {
+  background-color: $back;
+  padding-bottom: rem(60);
+  margin-top: rem(118);
+  @include mq(md) {
+    padding-bottom: rem(90);
+    margin-top: rem(188);
+  }
+}
+
+.roseshop__top-wrapper {
+  padding-top: rem(30);
+  @include mq(md) {
+    padding-top: rem(80);
+  }
+}
+
+.roseshop__inner {
+  margin-top: rem(30);
+  padding: 0 rem(37);
+  @include mq(md) {
+    margin-top: rem(73);
+    padding: 0 rem(80);
+  }
+}

@@ -1,0 +1,118 @@
+@use "../global" as *;
+
+
+.cafemenu-tab-wrapper {
+  background-color: $white;
+}
+
+
+.cafemenu-tab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cafemenu-tab li {
+  width: rem(125);
+  height: rem(80);
+  border: rem(1) solid $main;
+  @include mq(md) {
+    width: rem(426.67);
+  }
+}
+
+
+.cafemenu-tab li a {
+  width: inherit;
+  height: inherit;
+  display: block;
+  text-align: center;
+  padding-top: rem(24);
+  font-size: rem(24);
+  line-height: calc(32/24);
+  font-family: $title-font-family;
+  color: $sub;
+  @include mq(md) {
+  padding-top: rem(10);
+  font-size: rem(36);
+  line-height: calc(48/36);
+  }
+}
+
+.cafemenu-tab li.active a {
+  background-color: $main;
+}
+.tab__area-wrapper {
+  @include mq(md) {
+    width: rem(1280);
+  }
+}
+
+.area {
+  display: none;
+  background-color: $main;
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-bottom: rem(80);
+  }
+}
+
+.area.is-active {
+  display: block;
+  animation-name: displayanime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+.tab-title {
+  font-size: rem(28);
+  line-height: calc(37/28);
+  font-weight: $demi-bold;
+  color: $white;
+  border-bottom: rem(4) solid $white;
+  display: inline-block;
+  padding-top: rem(77);
+  margin-left: rem(19.5);
+  padding-bottom: rem(3);
+  @include mq(md) {
+    font-size: rem(36);
+    line-height: calc(48/36);
+    border-bottom: rem(8) solid $white;
+    padding-top: rem(71);
+    margin-left: rem(49);
+    padding-bottom: rem(2);
+  }
+}
+
+.tab-body {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(77);
+  }
+}
+
+.tab-menu {
+  font-size: rem(24);
+  line-height: calc(32/24);
+  font-weight: $medium;
+  color: $white;
+  border-bottom: 1px solid $white;
+  padding-bottom: rem(15);
+  margin-left: rem(19.5);
+  margin-right: rem(19.5);
+  letter-spacing: rem(-3);
+  @include mq(md) {
+    font-size: rem(36);
+    line-height: calc(48/36);
+    padding-bottom: rem(17);
+    margin-left: rem(49);
+    margin-right: rem(49);
+  }
+}
+
+.tab-menu:nth-child(n+2) {
+  margin-top: rem(15);
+  @include mq(md) {
+    margin-top: rem(15);
+  }
+}

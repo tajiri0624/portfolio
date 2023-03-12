@@ -1,0 +1,75 @@
+@use "../global" as *;
+.mv {
+  position: relative;
+}
+.mv__logo img {
+  width: rem(50);
+  height: rem(50);
+  aspect-ratio: 1/1;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -136%);
+  @include mq(md) {
+    width: rem(250);
+    height: rem(250);
+    transform: translate(-50%, -70%);
+  }
+}
+
+.mv__title {
+  font-family: $title-font-family;
+  font-size: rem(14);
+  line-height: calc(19/14);
+  color: $white;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -90%);
+  @include mq(md) {
+    font-size: rem(36);
+    line-height: calc(48/36);
+    transform: translate(-50%, 150%);
+  }
+}
+
+.mv__text {
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $demi-bold;
+  line-height: calc(21/16);
+  color: $white;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 58%);
+  @include mq(md) {
+    font-size: rem(36);
+    line-height: calc(48/36);
+    transform: translate(-50%, 300%);
+  }
+}
+
+.mv__slider {
+  position: relative;
+  z-index: 1;
+}
+
+.mv-slider-img  img{
+  aspect-ratio: 375/245;
+  width: 100%;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 1440/768;
+  }
+}
+
+
+.mv-slick-prev
+.mvslick-next {
+  display: none;
+}

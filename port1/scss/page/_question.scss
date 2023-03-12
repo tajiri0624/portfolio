@@ -1,0 +1,17 @@
+@use "../global" as *;
+
+.question {
+  margin-top: rem(60);
+  @include mq(md) {
+    margin-top: rem(140);
+  }
+}
+
+.question__inner {
+  margin-top: rem(34);
+  @include mq(md) {
+    margin-top: rem(76);
+  }
+}
+
+

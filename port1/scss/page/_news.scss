@@ -1,0 +1,54 @@
+@use "../global" as *;
+
+
+.news {
+  margin-top: rem(37);
+  @include mq(md) {
+    margin-top: rem(151);
+  }
+}
+
+.news__top-wrapper {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.news__top-wrapper img {
+    display: none;
+  @include mq(md) {
+    display: block;
+    height: rem(32.52);
+  }
+}
+
+.news__top-wrapper img:nth-child(1) {
+  @include mq(md) {
+    margin-right: rem(125);
+  }
+}
+
+.news__top-wrapper img:last-child {
+  @include mq(md) {
+    margin-left: rem(125);
+  }
+}
+
+
+.news__inner {
+  padding: 0 rem(35);
+  @include mq(md) {
+    padding: 0 rem(80);
+  }
+}
+
+.news__items {
+  margin-top: rem(22);
+  @include mq(md) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: rem(82);
+  }
+}

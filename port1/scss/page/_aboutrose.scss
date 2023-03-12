@@ -1,0 +1,39 @@
+@use "../global" as *;
+
+.aboutrose__top-wrapper {
+  background-image: url(../img/images/aboutrose-sp.jpg);
+  width: 100%;
+  height: rem(100);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: rem(83);
+  @include mq(md) {
+    background-image: url(../img/images/aboutrose-pc.jpg);
+    height: rem(630);
+    margin-top: rem(150);
+  }
+}
+
+.aboutrose__top {
+  padding-top: rem(16);
+  @include mq(md) {
+    padding-top: rem(68);
+  }
+}
+
+.aboutrose__text-body {
+  margin-top: rem(53);
+  padding: 0 rem(27);
+  @include mq(md) {
+    margin-top: rem(21);
+    padding: 0 rem(415);
+  }
+}
+
+.aboutrose__inner {
+  margin-top: rem(308);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}

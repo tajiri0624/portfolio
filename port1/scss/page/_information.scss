@@ -1,0 +1,23 @@
+@use "../global" as *;
+
+.information__top {
+  margin-top: rem(139);
+  @include mq(md) {
+    margin-top: rem(230);
+  }
+}
+
+.information__inner {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(79);
+  }
+}
+
+.information__block {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

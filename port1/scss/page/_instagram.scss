@@ -1,0 +1,43 @@
+@use "../global" as *;
+
+.instagram {
+  margin-top: rem(75);
+  background-color: #F4F4F4;
+  padding-bottom: rem(40);
+  @include mq(md) {
+    margin-top: rem(156);
+    padding-bottom: rem(80);
+  }
+}
+
+.instagram-wrapper {
+  padding-top: rem(35);
+  @include mq(md) {
+    padding-top: rem(68);
+  }
+}
+
+.instagram__inner {
+  margin-top: rem(22);
+  padding-left: rem(62);
+  padding-right: rem(62);
+  @include mq(md) {
+    margin-top: rem(81);
+    padding-left: rem(220);
+    padding-right: rem(220); 
+  }
+}
+
+.instagram__body {
+  @include mq(md) {
+  background-color: $white;
+  }
+}
+
+.instagram__img {
+  display: flex;
+  flex-wrap: wrap;
+  @include mq(md) {
+    padding: rem(48) rem(50);
+  }
+}

@@ -1,0 +1,92 @@
+@use "../global" as *;
+
+.contact {
+  margin-top: rem(77);
+  @include mq(md) {
+    margin-top: rem(156);
+    padding-left: rem(80);
+    padding-right: rem(80);
+  }
+}
+
+.contact__pc-wrapper {
+  @include mq(md) {
+    background-color: #F6F1E8;
+    padding-bottom: rem(37);
+  }
+}
+
+.contact-wrapper {
+  @include mq(md) {
+    padding-top: rem(75);
+  }
+}
+
+.contact__text-wrapper {
+  margin-top: rem(8);
+  padding-left: rem(10);
+  @include mq(md) {
+    margin-top: rem(24);
+    text-align: center;
+  }
+}
+
+.form__wrapper {
+  background-color: #F4F4F4;
+  margin-top: rem(45);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    background-color: initial;
+    margin-top: rem(48);
+  }
+}
+
+
+
+.form__inner {
+  padding: rem(35) rem(88) rem(33);
+  @include mq(md) {
+    padding-left: rem(240);
+    padding-right: rem(390);
+  }
+}
+
+.contact__form {
+  width: rem(200);
+  margin: auto;
+  @include mq(md) {
+    max-width: rem(700);
+    width: 100%;
+  }
+}
+
+.form__item {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: rem(660);
+  }
+}
+
+.form__item:last-child {
+  @include mq(md) {
+    align-items: flex-start;
+  }
+} 
+
+.form__item:nth-child(n+2) {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(35);
+  }
+}
+
+
+.form__btn {
+  margin-top: 0;
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(45);
+  }
+}

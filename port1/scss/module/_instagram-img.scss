@@ -1,0 +1,19 @@
+@use "../global" as *;
+
+
+.instagram-img img {
+  aspect-ratio: 125/125;
+  width: 50%;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 300/300;
+    width: 33.333%;
+  }
+}
+
+.instagram-img img:nth-child(n+7) {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}

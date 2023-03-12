@@ -1,0 +1,39 @@
+@use "../global" as *;
+
+.header-btn {
+  @include mq(md) {
+  background-color: $main;
+  width: rem(100);
+  height: rem(100);
+  margin-right: rem(-80);
+  }
+}
+.header-btn a {
+  @include mq(md) {
+    display: block;
+    height: inherit;
+  }
+}
+
+
+.header-btn p {
+  @include mq(md) {
+    font-size: rem(24);
+    font-family: $base-font-family;
+    font-weight: $demi-bold;
+    line-height: calc(32/24);
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: rem(12);
+  }
+}
+
+.header-btn img {
+  @include mq(md) {
+    width: rem(40);
+    height: rem(40);
+    margin-top: rem(1);
+    margin: 0 auto;
+  }
+}

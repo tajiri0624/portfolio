@@ -1,0 +1,231 @@
+@use "../global" as *;
+
+.footer {
+  @include mq(md) {
+    margin-top: rem(160);
+    background-image: url(../img/images/aboutrose-bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: rem(470);
+  }
+}
+
+
+
+
+.footer__rogo {
+  background-image: url(../img/images/aboutrose-bg2.png);
+  height: rem(122.4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  padding-top: rem(35);
+  @include mq(md) {
+    background-image: none;
+    height: 0;
+    background-size: initial;
+    background-repeat: repeat;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: rem(83);
+  }
+}
+
+.footer__rogo img {
+  aspect-ratio: 155.17/50;
+  width: rem(155.17);
+  height: rem(50);
+  margin-left: rem(13);
+  @include mq(md) {
+    aspect-ratio: 259.3/80;
+    width: rem(259.3);
+    height: rem(80);
+    margin-left: 0;
+  }
+} 
+
+.footer__information-top {
+  margin-top: rem(23);
+  @include mq(md) {
+    margin-top: rem(96);
+  }
+}
+.footer__addres a {
+  @include mq(md) {
+    display: flex;
+  }
+}
+.footer__addres p {
+  font-size: rem(14);
+  line-height: calc(19/14);
+  color: $sub;
+  font-weight: $medium;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(21/16);
+  } 
+}
+
+.footer__addres p:nth-child(n+2) {
+  @include mq(md) {
+    margin-left: rem(17);
+  }
+} 
+
+.footer__tel p {
+  font-size: rem(14);
+  line-height: calc(19/14);
+  color: $sub;
+  font-weight: $medium;
+  margin-top: rem(7);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(21/16);
+    margin-top: rem(8);
+  } 
+}
+
+.footer__tel p span {
+  margin-right: rem(27);
+}
+
+.footer__mail p {
+  font-size: rem(14);
+  line-height: calc(19/14);
+  color: $sub;
+  font-weight: $medium;
+  margin-top: rem(7);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(21/16);
+    margin-top: rem(8);
+  }
+}
+.footer__mail p span {
+  margin-right: rem(15);
+}
+
+.footer__information-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(171);
+    flex-direction: row-reverse;
+  }
+}
+.footer__privacy {
+  @include mq(md) {
+    display: flex;
+    margin-right: rem(102);
+  }
+}
+
+.footer__privacy p {
+  font-size: rem(14);
+  line-height: calc(19/14);
+  color: $sub;
+  font-weight: $medium;
+  margin-top: rem(5);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(21/16);
+    margin-top: rem(8);
+    margin-right: rem(11);
+  }
+}
+
+.footer__privacy p::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: rem(5.5) 0 rem(5.5) rem(9.5);
+  border-color: transparent transparent transparent $sub;
+  margin-right: rem(8);
+  display: inline-block;
+}
+
+.footer__privacy p:last-of-type {
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.fotter-sns-title {
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(21/16);
+    color: $sub;
+  }
+}
+
+.footer__rogo-sns {
+  display: flex;
+  margin-top: rem(-9);
+  @include mq(md) {
+  align-items: center;
+  margin-top: rem(-3);
+  }
+}
+
+.footer-sns-twitter {
+  width: rem(37.55);
+  height: rem(30.5);
+  @include mq(md) {
+    width: rem(36);
+    height: rem(29.24);
+    margin-left: rem(31);
+  }
+
+}
+
+.footer-sns-twitter img {
+  aspect-ratio: 37.55/30.5;
+  width: 100%;
+  object-fit: cover;
+  margin-left: rem(-14);
+  @include mq(md) {
+    aspect-ratio: 36/29.24;
+  }
+}
+
+.footer-sns-line {
+  width: rem(31.5);
+  height: rem(31.5);
+  @include mq(md) {
+    margin-left: rem(5);
+  }
+}
+
+.footer-sns-line img {
+  aspect-ratio: 31.5/31.5;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer__bottom {
+  background-color: $main;
+  width: 100%;
+  height: rem(38);
+  text-align: center;
+  padding: rem(9);
+  margin-top: rem(39);
+  @include mq(md) {
+    margin-top: rem(13);
+  }
+}
+
+.footer__bottom p {
+  font-size: rem(14);
+  line-height: calc(19/14);
+  color: $white;
+  font-weight: $medium;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(21/16);
+  }
+}

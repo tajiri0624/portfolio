@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>実案件レベル1</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+  <!-- css -->
+  <link rel="stylesheet" href="./scss/style.css">
+  <!-- フォント -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'cjv8dky',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+  <!-- mv-slider -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/6-1-2.css">
+  <!-- cafemenu-tab -->
+  <link rel="stylesheet" type="text/css" href="css/5-4-1.css">
+  <!-- lookrose -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/6-1-7.css">
+  <!-- question-accordion -->
+  <link rel="stylesheet" type="text/css" href="css/9-2-1.css">
+  <!-- page-top-btn -->
+  <link rel="stylesheet" type="text/css" href="css/8-1-2.css">
+  <meta name="robots" content="noindex">
+</head>
+<body>
+    <header>
+      <div class="header__inner inner">
+        <div class="header__nav-wrapper">
+          <div class="header__logo">
+            <a href=""><img src="./img/images/logo.svg" alt="バラのロゴです"></a>
+          </div>
+          <nav class="header__nav header-nav js-drawer">
+            <ul class="header__nav-items header-nav__items">
+              <li class="header-nav__item u-mobile"><a href="">top</a></li>
+              <li class="header-nav__item"><a href="">about</a></li>
+              <li class="header-nav__item"><a href="">maintenance</a></li>
+              <li class="header-nav__item"><a href="">infomation</a></li>
+              <li class="header-nav__item"><a href="">shop</a></li>
+              <li class="header-nav__item"><a href="">q&a</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__btn header-btn">
+          <a href="">
+            <p>tel</p>
+            <img src="./img/images/tel-icon2.svg" alt="電話のロゴです">
+          </a>
+        </div>
+        <div class="header__hamburger hamburger js-hamburger">
+          <p>menu</p>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <!-- mv開始 -->
+    <section class="mv">
+      <div class="title-wrapper">
+        <div class="mv__logo">
+          <img src="./img/images/logo_white.svg" alt="白いバラのロゴです">
+        </div>
+        <h1 class="mv__title">LRgarden</h1>
+        <p class="mv__text">色と香りの楽園で過ごすひととき</p>
+        <ul class="mv__slider mv-slider">
+          <li class="mv-slider-img slider"><img src="./img/images/mv1.png" alt="公園の写真です"></li>
+          <li class="mv-slider-img slider"><img src="./img/images/mv2.png" alt="赤いバラの写真です"></li>
+          <li class="mv-slider-img slider"><img src="./img/images/mv3.png" alt="ピンクのバラの写真です"></li>
+        </ul>
+      </div>
+    </section>
+    <!-- mv終了 -->
+    <!-- news開始 -->
+    <section class="news">
+      <div class="news__inner inner">
+        <div class="news__top-wrapper section-top-wrapper">
+          <img src="./img/images/line.svg" alt="ツルのロゴです">
+          <h2 class="news__top section-title">news<span>お知らせ</span></h2>
+          <img src="./img/images/line.svg" alt="ツルのロゴです">
+        </div>
+        <ul class="news__items news-items">
+          <li class="news__item news-item">
+            <div class="news__img">
+              <img src="./img/images/news1.png" alt="夜景の写真です">
+            </div>
+            <div class="news__body">
+              <p class="news__date">2022.00.00</p>
+              <p class="news__text">
+                夏だけの特別イベント！<br>ランタンと巡るナイト・ローズガーデン
+              </p>
+            </div>
+          </li>
+          <li class="news__item news-item">
+            <div class="news__img">
+              <img src="./img/images/news2.png" alt="花束の写真です">
+            </div>
+            <div class="news__body">
+              <p class="news__date">2022.00.00</p>
+              <p class="news__text">
+                人気のフラワーアレジメント講師が教える<br class=".u-desktop">園内のバラを使ったオリジナルのブーケ作り
+              </p>
+            </div>
+          </li>
+          <li class="news__item news-item">
+            <div class="news__img">
+              <img src="./img/images/news3.png" alt="夜景の写真です">
+            </div>
+            <div class="news__body">
+              <p class="news__date">2022.00.00</p>
+              <p class="news__text">
+                生活を彩るバラの活用法！<br>花と香りを楽しむ方法とリラクゼーション体験
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- news終了 -->
+    <!-- about rose開始 -->
+    <section class="aboutrose">
+      <div class="aboutrose__top-wrapper section-top-wrapper">
+        <h2 class="aboutrose__top section-title">about rose<span>バラについて</span></h2>
+        <div class="aboutrose__text-body aboutrose-text-body">
+          <p>バラは古来から世界各国で愛されてきた美しい花です。品種も豊富で香りが高く、贈り物にも用いられます。</p>
+          <p>開花時期も品種により異なるので、長く鑑賞できる点も魅力です。</p>
+          <p>花は鑑賞だけでなく加工も可能で、オイルやポプリなどさまざまな商品に利用されています。</p>
+          <p>歴史あるバラの世界へぜひ訪れてみてください。</p>
+        </div>
+      </div>
+      <div class="aboutrose__inner inner">
+        <ul class="aboutrose__items aboutrose-items">
+          <li class="aboutrose__item aboutrose-item">
+            <div class="aboutrose-item-img">
+              <img src="./img/images/circle1.png" alt="色とりどりのバラ">
+            </div>
+            <div class="aboutrose-item-body">
+              <p class="aboutrose-category">色</p>
+              <p class="aboutrose-text">バラの色は赤、白、ピンク、オレンジ、黄色などカラーバリエーションが豊富。<br>中でも青いバラは貴重なので、開花の際にはぜひご覧いただきたいバラです。<br></p>
+            </div>
+          </li>
+          <li class="aboutrose__item aboutrose-item">
+            <div class="aboutrose-item-img">
+              <img src="./img/images/circle2.png" alt="ピンク色のバラ">
+            </div>
+            <div class="aboutrose-item-body">
+              <p class="aboutrose-category">種類</p>
+              <p class="aboutrose-text">バラは花の中でも種類がとても多く、花びらの形もさまざま。花の大きさや仕立て方、原種に近いものや品種改良された珍しいバラも毎年登場しています。</p>
+            </div>
+          </li>
+          <li class="aboutrose__item aboutrose-item">
+            <div class="aboutrose-item-img">
+              <img src="./img/images/circle3.png" alt="花の匂いを嗅いでいる写真です">
+            </div>
+            <div class="aboutrose-item-body">
+              <p class="aboutrose-category">香り</p>
+              <p class="aboutrose-text">バラの魅力は美しさだけでなく、香りも芳醇で人気があります。香りの中にもスパイシーやスイートなど種類がある他、食べられるバラもあります。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- about rose終了 -->
+    <!-- roseshop開始 -->
+    <section class="roseshop">
+      <div class="roseshop__top-wrapper section-top-wrapper">
+        <h2 class="roseshop__top section-title">rose shop<span>園内のおすすめショップ</span></h2>
+      </div>
+      <div class="roseshop__inner inner">
+        <ul class="roseshop__items roseshop-items">
+          <li class="roseshop__item roseshop-item">
+            <div class="roseshop-img">
+              <img src="./img/images/shop1.png" alt="ケーキの写真です">
+            </div>
+            <div class="roseshop__body">
+              <h3 class="roseshop-title">Rosey Cafe<span>（ロージィカフェ）</span></h3>
+              <p class="roseshop-text">バラの香りが優しく店内に広がるカフェ。<br>
+                ドリンク、軽食、デザートなどが楽しめます。<br>
+                バラを使ったメニューもおすすめ。<br>
+              </p>
+            </div>
+          </li>
+          <li class="roseshop__item roseshop-item">
+            <div class="roseshop-img">
+              <img src="./img/images/shop2.png" alt="お店の入口の写真です">
+            </div>
+            <div class="roseshop__body">
+              <h3 class="roseshop-title">Fragrance<span>（フレグランス）</span></h3>
+              <p class="roseshop-text">切り花の他、バラの苗も各種取り揃えています。<br>
+                バラの育て方やおすすめの品種などのご質問もOK！<br>
+                色彩豊かな店内をお楽しみください。<br>
+              </p>
+            </div>
+          </li>
+          <li class="roseshop__item roseshop-item">
+            <div class="roseshop-img">
+              <img src="./img/images/shop3.png" alt="雑貨屋の写真です">
+            </div>
+            <div class="roseshop__body">
+              <h3 class="roseshop-title">An's garden<span>（アンズ ガーデン</span></h3>
+              <p class="roseshop-text">イギリスの庭をイメージした可愛らしい雑貨屋。<br>
+                ガーデニング用品やお土産、バラを使った雑貨などを扱っています。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- roseshop終了 -->
+    <!-- cafemenu開始 -->
+    <section class="cafemenu">
+      <h2 class="cafemenu__top cafemenu-top">rosey cafe menu</h2>
+      <div class="cafemenu__tab-wrapper">
+        <ul class="cafemenu__tab cafemenu-tab tab">
+          <li><a href="#drink">drink</a></li>
+          <li><a href="#food">food</a></li>
+          <li><a href="#dessert">dessert</a></li>
+        </ul>
+        <div class="tab__area-wrapper tab-area-wrapper">
+          <div id="drink" class="tab-area area">
+            <h2 class="tab-title">ドリンクメニュー</h2>
+            <ul class="tab__body tab-body">
+              <li class="tab-menu">ブレンドコーヒー</li>
+              <li class="tab-menu">紅茶（レモンorミルク）</li>
+              <li class="tab-menu">バラの花びら入りハーブティ</li>
+              <li class="tab-menu">コーラフロート</li>
+            </ul>
+          </div>
+          <div id="food" class="tab-area area">
+            <h2 class="tab-title">フードメニュー</h2>
+            <ul class="tab__body tab-body">
+              <li class="tab-menu">ピザトースト</li>
+              <li class="tab-menu">クラブサンド</li>
+              <li class="tab-menu">ピラフ</li>
+              <li class="tab-menu">スパゲティナポリタン</li>
+            </ul>
+          </div>
+          <div id="dessert" class="tab-area area">
+            <h2 class="tab-title">デザートメニュー</h2>
+            <ul class="tab__body tab-body">
+              <li class="tab-menu">ソフトクリーム</li>
+              <li class="tab-menu">バラのパフェ</li>
+              <li class="tab-menu">パンケーキ</li>
+              <li class="tab-menu">アフタヌーンティセット</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cafemenu終了 -->
+    <!-- lookrose開始 -->
+    <section class="lookrose">
+      <div class="lookrose__top-wrapper section-top-wrapper">
+        <h2 class="lookrose__top section-title">look rose<span>見頃のバラTOP5のご紹介</span></h2>
+      </div>
+      <div class="lookrose__inner">
+        <ul class="lookrose__slider lookrose-slider js-lookrose-slider">
+          <li class="lookrose-img"><img src="./img/images/rose5.png" alt="ピンク色のバラの写真です。"></li>
+          <li class="lookrose-img"><img src="./img/images/rose1.png" alt="白いピンクのバラです"></li>
+          <li class="lookrose-img"><img src="./img/images/rose2.png" alt="ピンク色のバラの写真です。"></li>
+          <li class="lookrose-img"><img src="./img/images/rose3.png" alt="赤色のバラです。"></li>
+          <li class="lookrose-img"><img src="./img/images/rose4.png" alt="ピンク色のバラの写真です。"></li>
+        </ul>
+      </div>
+    </section>
+    <!-- lookrose終了 -->
+    <!-- question開始 -->
+    <section class="question">
+      <div class="question__top-wrapper section-top-wrapper">
+        <h2 class="question__top section-title">question<span>よくあるご質問</span></h2>
+      </div>
+      <div class="question__inner inner">
+        <ul class="question__accordion-area question-accordion-area js-accordion">
+          <li class="question__accordion-block question-accordion-block">
+            <h3 class="question-accordion-title"><span class="question-accordion-mark">q</span>駐車場はありますか？</h3>
+            <div class="question__accordion-box js-accordion-box">
+              <p class="question-accordion-text"><span class="question-accordion-mark">a</span>駐車場は園内前に大型無料駐車場がございます。</p>
+            </div>
+          </li>
+          <li class="question__accordion-block question-accordion-block">
+            <h3 class="question-accordion-title"><span class="question-accordion-mark">q</span>お弁当など飲食物の持ち込みはできますか？</h3>
+            <div class="question__accordion-box js-accordion-box">
+              <p class="question-accordion-text"><span class="question-accordion-mark">a</span>園内にある芝生の広場でご飲食が可能です。</p>
+            </div>
+          </li>
+          <li class="question__accordion-block question-accordion-block">
+            <h3 class="question-accordion-title"><span class="question-accordion-mark">q</span>ペット同伴の入場はできますか？</h3>
+            <div class="question__accordion-box js-accordion-box">
+              <p class="question-accordion-text"><span class="question-accordion-mark">a</span>リードを付けた状態でご一緒に入場可能です。各ショップへの入店はご遠慮くださいませ。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- question終了 -->
+    <!-- information開始 -->
+    <section class="information">
+      <div class="information-wrapper section-top-wrapper">
+        <h2 class="information__top section-title">infoRmation<span>当園のご紹介</span></h2>
+      </div>
+      <div class="information__inner inner">
+        <div class="information__block imformation-block">
+          <ul class="information__items information-items">
+            <li class="imfomation-item">
+              <h4 class="information-category">園名</h4>
+              <p class="information-details informatin-name">LRGarden</p>
+            </li>
+            <li class="imfomation-item">
+              <h4 class="information-category">住所 </h4>
+              <p class="information-details informatin-adores">〒000-0000 <span>○○県○○市○○○○町123-45</span></p>
+            </li>
+            <li class="imfomation-item">
+              <h4 class="information-category">料金</h4>
+              <ul class="information-details information-money">
+                <li> 大人/1,000円</li>
+                <li>18歳未満/800円</li>
+                <li>小学生以下/無料</li>
+              </ul>
+            </li>
+            <li class="imfomation-item">
+              <h4 class="information-category">open</h4>
+              <p class="information-details information-time">am10:00 - pm21:00</p>
+            </li>
+            <li class="imfomation-item">
+              <h4 class="information-category">close</h4>
+              <p class="information-details informatin-text">月曜日 （祝日の場合は翌日休園）</p>
+            </li>
+            <li class="imfomation-item">
+              <h4 class="information-category">tel</h4>
+              <p class="information-details informatin-tel">00-0000-0000</p>
+            </li>
+            <li class="imfomation-item">
+              <h4 class="information-category">mail</h4>
+              <p class="information-details informatin-mail">lrgarden@xxx.com</p>
+            </li>
+          </ul>
+          <div class="information__img">
+            <img src="./img/images/infomation.png" alt="公園の写真です">
+          </div>
+        </div>
+        <div class="imformation__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13002.107715823258!2d139.64796991406246!3d35.44174721697181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185d831b5173e7%3A0x6bcd2634daeccca6!2z44Kk44Oz44Kw44Oq44OD44K344Ol44Ot44O844K644Gu5bqt!5e0!3m2!1sja!2sjp!4v1668167411034!5m2!1sja!2sjp" width="355" height="104" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- information終了 -->
+    <!-- インスタグラム開始 -->
+    <div class="instagram">
+      <div class="instagram-wrapper section-top-wrapper">
+        <h2 class="instagram__top section-title">instagram<span>インスタグラム</span></h2>
+      </div>
+      <div class="instagrom__wrapper">
+        <div class="instagram__inner">
+          <div class="instagram__body">
+            <div class="instagram__img instagram-img">
+              <img src="./img/images/insta1.png" alt="ワイングラス">
+              <img src="./img/images/insta2.png" alt="公園入口">
+              <img src="./img/images/insta3.png" alt="黄色いバラ">
+              <img src="./img/images/insta4.png" alt="ピンクのバラ">
+              <img src="./img/images/insta5.png" alt="花を積んでいる">
+              <img src="./img/images/insta6.png" alt="花の絵">
+              <img src="./img/images/insta7.png" alt="色とりどりのバラ">
+              <img src="./img/images/insta8.png" alt="赤いバラ">
+              <img src="./img/images/insta9.png" alt="ピンクのバラ">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- インスタグラム終了 -->
+    <!-- コンタクト開始 -->
+    <section class="contact">
+      <div class="contact__pc-wrapper">
+        <div class="contact-wrapper section-top-wrapper">
+          <h2 class="contact__top section-title">contact<span>お問い合わせ</span></h2>
+        </div>
+        <div class="contact__text-wrapper">
+          <p class="contact-text">
+            当園へのご質問などはお気軽にお問い合わせくださいませ。<br>
+            1～2営業日以内に当園スタッフよりご連絡させていただきます。
+          </p>
+        </div>
+        <div class="form__wrapper">
+          <div class="form__inner">
+            <form action="contact" class="contact__form form">
+              <div class="form__item">
+                <div class="form__label-area">
+                  <label for="name" class="form__label">お名前</label>
+                </div>
+                <div class="form__input-area">
+                  <input type="text" name="name" id="name">
+                </div>
+              </div>
+              <div class="form__item">
+                <div class="form__label-area">
+                  <label for="tel" class="form__label">電話番号</label>
+                </div>
+                <div class="form__input-area">
+                  <input type="text" name="tel" id="tel">
+                </div>
+              </div>
+              <div class="form__item">
+                <div class="form__label-area">
+                  <label for="email" class="form__label">メールアドレス</label>
+                </div>
+                <div class="form__input-area">
+                  <input type="email" name="email" id="email">
+                </div>
+              </div>
+              <div class="form__item">
+                <div class="form__label-area">
+                  <label for="message" class="form__label">お問い合わせ内容</label>
+                </div>
+                <div class="form__input-area">
+                  <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="form__btn">
+            <button class="form-btn btn" type="submit">送信する</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- コンタクト終了 -->
+    <!-- page-top開始 -->
+    <div class="page__top js-page-top">
+      <a href=""><img src="./img/images/page-top-btn.png" alt="トップに戻るボタンです"></a>
+    </div>
+    <!-- page-top終了 -->
+    <!-- footer開始 -->
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <div class="footer__rogo">
+          <a href=""><img src="./img/images/logo.svg" alt="バラのロゴです"></a>
+        </div>
+        <div class="footer__information-top">
+          <div class="footer__addres">
+            <a href="">
+              <p class="u-desktop">住所</p>
+              <p>〒000-0000</p>
+              <p>○○県○○市○○○○町123-45</p>
+            </a>
+          </div>
+          <div class="footer__tel">
+            <a href="">
+              <p><span>tel</span>00-0000-0000</p>
+            </a>
+          </div>
+          <div class="footer__mail">
+            <a href="">
+              <p><span>mail</span>lrgarden@xxx.com</p>
+            </a>
+          </div>
+        </div>
+        <div class="footer__information-bottom">
+          <div class="footer__privacy">
+            <a href=""><p>プライバシーポリシー</p></a>
+            <a href=""><p>LRGardenグループサイトへ</p></a>
+          </div>
+          <div class="footer__rogo-sns">
+            <p class="fotter-sns-title u-desktop">公式SNS</p>
+            <div class="footer-sns-twitter">
+              <a href=""><img src="./img/images/twitter.svg" alt="ツイッターのロゴです"></a>
+            </div>
+            <div class="footer-sns-line">
+              <a href=""><img class="footer-sns-line" src="./img/images/line-icon.svg" alt="ラインのロゴです"></a>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="footer__bottom">
+        <p>©20xxx LRGarden</p>
+      </div>
+    </footer>
+    <!-- footer開始 -->
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--自作のJS-->
+    <script src="js/6-1-2.js"></script>
+    <script src="js/9-2-1.js"></script>
+    <script src="js/8-1-2.js"></script>  
+  </body>
+</html>
